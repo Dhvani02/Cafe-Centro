@@ -1,0 +1,86 @@
+body
+{
+	background-image: url("bgg.jpg");
+	background-repeat: no-repeat;
+	background-size: 1500px 1500px;
+}
+
+.a1
+{
+  text-align: center;
+  text-decoration: none;
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  padding-bottom:10px;
+}
+a.a1:hover
+{
+ 
+    cursor: pointer;
+}
+
+a:hover
+{
+  cursor: pointer;
+}
+
+
+
+.l1
+{
+  float: left;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.l2
+{
+  float: left;
+}
+
+.p2
+{
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  text-align: left;
+}
+.u1
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20;
+  color: white;
+  top:10px;
+  z-index: 2;
+  position: fixed;
+}
+.td2
+{
+	font-size: 40px;
+	text-align: right;
+	right: 10px;
+	font-family: Monotype Corsiva;
+	color: white;
+
+}
+
+a:link {
+    color: green;
+}
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover
+{
+color: white;
+}

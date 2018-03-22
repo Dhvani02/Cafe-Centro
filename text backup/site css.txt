@@ -1,0 +1,219 @@
+.a1
+{
+  text-align: center;
+  text-decoration: none;
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  padding-bottom:10px;
+}
+a.a1:hover
+{
+  background-color:grey; 
+  cursor: pointer;
+}
+
+a:hover
+{
+  cursor: pointer;
+}
+
+body.b1
+{
+  background-image: url("bgg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bleft
+{
+  left: 50px;
+  top: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+.bright
+{
+  left: 1250px;
+  top: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+
+.d1
+{
+  width: 1300px;
+  height: 600px; 
+  margin:auto;
+  opacity:0.8;
+}
+
+hr
+{
+  color: black;
+  
+}
+
+.i1
+{
+  width: 100%;
+  height: 100%;
+}
+
+img.i2:hover 
+{
+  opacity: 0.5; 
+}
+
+.l1
+{
+  float: left;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.l2
+{
+  float: left;
+}
+
+
+.p1
+{
+  left:650px;
+  z-index: 2;
+  color: #cc7a00;
+  position:absolute;
+  top: 440px;
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+}
+
+.p2
+{
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  text-align: left;
+}
+
+.p3
+{
+  font-family: Monotype Corsiva;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  color:  #f2960d;
+}
+
+
+.spl_m
+{
+  width:300px;
+  height:300px;
+  background-image: url("s1.jpg");
+  background-size: 100% 100%;
+}
+.spl_t
+{
+  width:300px;
+  height:300px;
+  background-image: url("s2.jpg");
+  background-size: 100% 100%;
+}
+.spl_w
+{
+  width:300px;
+  height:300px;
+  background-image: url("s3.jpg");
+  background-size: 100% 100%;
+}
+.spl_th
+{
+  width:300px;
+  height:300px;
+  background-image: url("s4.jpg");
+  background-size: 100% 100%;
+}
+.spl_f
+{
+  width:300px;
+  height:300px;
+  background-image: url("s5.jpg");
+  background-size: 100% 100%;
+}
+.spl_s
+{
+  width:300px;
+  height:300px;
+  background-image: url("s6.jpg");
+  background-size: 100% 100%;
+}
+.spl_su
+{
+  width:300px;
+  height:300px;
+  background-image: url("s7.jpg");
+  background-size: 100% 100%;
+}
+
+.spl_m:hover .text,.spl_t:hover .text,.spl_w:hover .text,.spl_th:hover .text,.spl_f:hover .text,.spl_s:hover .text,.spl_su:hover .text 
+{ opacity:0.6; 
+  text-align:center; 
+  
+  color:#00000; 
+  font-size:30px; 
+  font-weight:700; 
+  font-family: Monotype Corsiva;
+  padding:30px; 
+  cursor: pointer;
+}
+
+
+.text
+{ width:240px; 
+  height:240px; 
+  background:#FFF; 
+  vertical-align: middle;
+  opacity:0; 
+}
+
+.u1
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20;
+  color: black;
+  top:10px;
+  z-index: 2;
+  position: fixed;
+
+}
+
+.tb2
+{
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  color: white;
+}
+
+
+td
+{
+  padding:30px;
+  padding-left: 30px;
+}
+
+tr
+{
+    margin-left: 40cm;
+}
+
+

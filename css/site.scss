@@ -1,0 +1,495 @@
+.a1
+{
+  text-align: center;
+  text-decoration: none;
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  padding-bottom:10px;
+}
+a.a1:hover
+{
+  background-color:grey; 
+  cursor: pointer;
+}
+
+a:hover
+{
+  cursor: pointer;
+}
+
+body.b1
+{
+  background-image: url("bgg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bleft
+{
+  left: 50px;
+  top: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+.bright
+{
+  left: 1250px;
+  top: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+
+.d1
+{
+  width: 1300px;
+  height: 600px; 
+  margin:auto;
+  opacity:0.8;
+}
+
+hr
+{
+  color: black;
+  
+}
+
+.i1
+{
+  width: 100%;
+  height: 100%;
+}
+
+img.i2:hover 
+{
+  opacity: 0.5; 
+}
+
+.l1
+{
+  float: left;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.l2
+{
+  float: left;
+}
+
+
+.p1
+{
+  left:650px;
+  z-index: 2;
+  color: #cc7a00;
+  position:absolute;
+  top: 440px;
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+}
+
+.p2
+{
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  text-align: left;
+}
+
+.p3
+{
+  font-family: Monotype Corsiva;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  color:  #f2960d;
+}
+
+
+.spl_m
+{
+  width:300px;
+  height:300px;
+  background-image: url("s1.jpg");
+  background-size: 100% 100%;
+}
+.spl_t
+{
+  width:300px;
+  height:300px;
+  background-image: url("s2.jpg");
+  background-size: 100% 100%;
+}
+.spl_w
+{
+  width:300px;
+  height:300px;
+  background-image: url("s3.jpg");
+  background-size: 100% 100%;
+}
+.spl_th
+{
+  width:300px;
+  height:300px;
+  background-image: url("s4.jpg");
+  background-size: 100% 100%;
+}
+.spl_f
+{
+  width:300px;
+  height:300px;
+  background-image: url("s5.jpg");
+  background-size: 100% 100%;
+}
+.spl_s
+{
+  width:300px;
+  height:300px;
+  background-image: url("s6.jpg");
+  background-size: 100% 100%;
+}
+.spl_su
+{
+  width:300px;
+  height:300px;
+  background-image: url("s7.jpg");
+  background-size: 100% 100%;
+}
+
+.spl_m:hover .text,.spl_t:hover .text,.spl_w:hover .text,.spl_th:hover .text,.spl_f:hover .text,.spl_s:hover .text,.spl_su:hover .text 
+{ opacity:0.6; 
+  text-align:center; 
+  
+  color:#00000; 
+  font-size:30px; 
+  font-weight:700; 
+  font-family: Monotype Corsiva;
+  padding:30px; 
+  cursor: pointer;
+}
+
+
+.text
+{ width:240px; 
+  height:240px; 
+  background:#FFF; 
+  vertical-align: middle;
+  opacity:0; 
+}
+
+.u1
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 20;
+  color: black;
+  top:10px;
+  z-index: 2;
+  position: fixed;
+
+}
+
+.tb2
+{
+  font-family: Monotype Corsiva;
+  font-size: 30px;
+  color: white;
+}
+
+
+td
+{
+  padding:30px;
+  padding-left: 30px;
+}
+
+tr
+{
+    margin-left: 40cm;
+}
+
+@import "compass/css3";
+
+/****
+SETUP
+****/
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+$menucolour:#333;
+$highlight:#eeeeaa;
+$lighttext:#eee;
+
+/*
+There used to be a menu icon loaded as a (part of a wasteful) font here. It isn't hosted anymore. Such is life.
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  //font-family: 'symbolset';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  vertical-align:top;
+}
+.icon-menu:before {
+  content: "🍔";
+}
+
+
+////
+
+
+body{
+  background:#ddc;
+  font-family: 'Quattrocento Sans', Helmet, Freesans, Tahoma, Geneva, sans-serif;
+}
+
+a{
+  @include transition(color 800ms ease-in-out, background 800ms ease-in-out); 
+}
+
+.nav {
+  padding:2em 0;
+  
+  font-size:1em;
+  letter-spacing:0.1em;
+  text-align: center;
+
+    .menu-toggle{
+    position:relative;
+    z-index:2;
+        display: block;
+        margin:0;
+        padding: 0.5em 0;
+    
+        background-color:#ddc;
+    
+    text-decoration: none;
+        text-align:center;
+        font-size:1.4em; 
+        color:$menucolour;
+
+        &:hover, &:focus{
+      color:$lighttext;
+            background-color: darken($menucolour, 2%);
+        }
+    }
+
+    .menu-toggle-text{
+        font-size:0.55em;
+        display:block;
+    }
+
+    .no-js & .menu-toggle{
+        display:none;
+    }
+
+    .expanded-menu-toggle{
+        color:$highlight;
+        background-color: darken($menucolour, 2%);
+    }
+
+    .no-fontface & .icon-menu:before{
+        display:none;
+    }
+}
+
+
+    /* .menu is visually hidden by default */
+.menu {
+  position:relative;
+  z-index:1;
+  background-color:$menucolour;
+  border: 0; 
+  margin: -1px auto; 
+  overflow: hidden; 
+  padding: 0; 
+  max-height:1px; 
+  min-height:0; 
+  clip: rect(0 0 0 0);
+  @include box-shadow(inset 0 0 3px 3px rgba(0, 0, 0, 0.2));
+    
+  @include transition(max-height 600ms ease-out, 
+    min-height 600ms ease-in, 
+    padding 600ms ease-in);
+            
+  li {
+    a {
+      display: block;
+      padding: 10px 0;
+      
+      background-color: transparent;
+      
+      text-decoration: none;
+      text-align:center;
+      font-size:1.2em; 
+      color:$lighttext;
+      
+      @include border-radius(2px);
+      
+      &:hover, &:focus {
+        color:$highlight;
+        background:lighten($menucolour, 10%);
+      }
+    }
+    
+    /* no sub menus for mobile */
+    ul.sub-menu, ul.children {   
+      display:none;
+    }
+  } /* end .menu li */
+} /* end .menu */
+
+    .no-js .menu, .expanded-mobile-menu{
+        @include transition(max-height 800ms ease-in, min-height 500ms ease-out, padding 400ms ease-in);
+
+        /*min/max heights allow me to css transition to height auto for WordPress menus with unknown number of items*/
+        clip: auto;
+        min-height:8em;
+        max-height:100em;
+        padding:0.5em 0;
+    }
+
+
+@media only screen and (min-width: 30.1em) { /*481 ish px*/
+  
+    .menu {
+            li {
+                float:left;
+                width:50%;
+        }
+    }
+  
+}
+
+
+@media only screen and (min-width: 48em) {
+  
+  .nav {
+    .menu-toggle{
+      display:none;
+    }
+    }
+
+    .menu, .no-js .menu, .expanded-mobile-menu {
+    /* no longer hidden by default! */
+        margin:0;
+        min-height:0;
+        max-height:999em;
+        @include border-radius(0);
+        overflow:visible;
+        padding:0.7em 0;
+        background:$menucolour;
+        @include box-shadow(inset 0 0 3px 3px rgba(0, 0, 0, 0.2));
+            
+    li {
+      float:none;
+      width:auto;
+      display:inline-block;
+      position: relative;
+      vertical-align:middle;
+      
+      .lt-ie8 &{
+        /* inline-block fix for old ie (relevant if they're served larger media queries in an IE stylesheet or something similar...*/
+        display:inline;
+        zoom:1;
+      }
+                
+      a {
+        padding:0.3em 1em;
+        color:$lighttext;
+        
+        &:hover, &:focus {
+          color: $highlight;
+          background: lighten($menucolour, 2%);
+        }
+      }
+      
+      /* DROP DOWNS */
+      ul.sub-menu,
+        ul.children {
+        display:block;
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        left:0;
+        white-space:nowrap;
+        
+        @include transition(max-height 400ms ease-out,
+          min-height 500ms ease-in, 
+          padding 500ms ease-out, 
+          opacity 500ms ease-in);
+        
+        background:lighten($menucolour, 2%);
+        text-align:left;
+        @include border-radius(0 4px 4px 4px);
+        
+        /* visually hidden */
+        opacity:0;
+        border: 0; 
+        margin: -1px 0; 
+        overflow: hidden; 
+        padding: 0; 
+        max-height:1px; 
+        min-height:0; 
+        
+        li {
+          display:block;
+          padding:0.2em 0.4em 0;
+          a {
+            font-size:1em;
+            padding:0.2em 0.5em 0.2em 0.8em;
+            display:block;
+            line-height:1.5;
+            margin:0;
+            text-align:left;
+            background:transparent;
+                            
+                            &:hover,
+                            &:focus {
+                                background:lighten($menucolour, 4%);
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                border-bottom: 0;
+                            }
+                        }
+                        /* could go deeper here... */
+                    }
+                }
+                
+      /* showing sub-menus */
+      &:hover ul, &.focused ul {
+        @include transition(max-height 800ms ease-in,
+          min-height 500ms ease-out, 
+          padding 500ms ease-out, 
+          opacity 800ms ease-out);
+        /* again using min/max heights to deal with unknown length of lists */
+        
+        min-height:8em;
+        max-height:100em;
+        padding:0.4em 0;
+        opacity:1;
+        
+        ul{
+          min-height:0;
+          padding:0;
+        }
+      }
+
+      &:hover > a{
+        background:lighten($menucolour, 2%);
+      }
+                
+        } /* end .menu ul li */
+    } /* end .menu */
+  
+}/* end media query*/
+

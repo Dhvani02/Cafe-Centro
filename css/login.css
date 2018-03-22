@@ -1,0 +1,31 @@
+body
+{
+	background-image: url("bgg.jpg");
+	background-repeat: no-repeat;
+	background-size: 1500px 1500px;
+    color: whitesmoke;
+    font-family: Monotype Corsiva;
+    font-size: 40px;
+    /*text-align: center;*/
+}
+
+div.d1
+{
+    float:left;
+}
+
+div.d2
+{
+    float: right;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

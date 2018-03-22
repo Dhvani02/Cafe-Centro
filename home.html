@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cafe Centro</title>
+  <link href="css/site.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/site.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+
+
+//setting up the listener
+bars.addEventListener("click", barClicked, false);
+
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+</script>
+</head>
+<!--<body class="b1">-->
+
+<body>
+
+    <!-- Navigation -->
+    <div class="bars" id="nav-action">
+  <span class="bar"> </span>
+</div>
+
+<!--Navbar Links-->
+<nav id="nav">
+  <ul>
+    <li class="shape-circle circle-one"><a href="#">Contact</a></li>
+    <li class="shape-circle circle-two"><a href="#">Blog</a></li>
+    <li class="shape-circle circle-three"><a href="#">Work</a></li>
+    <li class="shape-circle circle-five">
+      <a href="#">Home</a>
+    </li>
+  </ul>
+</nav>
+     <div class="d1">
+  <img name="slide" class="i1" src="img1.jpg">
+  <p class="p1">Cafe Centro</p>
+  <button class="bleft" onclick="swapImageClickL()">&#10094;</button>
+  <button class="bright" onclick="swapImageClickR()">&#10095;</button>
+
+  </div>
+  <hr>
+  <div class="d2">
+  <p class="p3">Daily Special</p> 
+
+
+  <div class="row">
+  <div class="col-xs-9 col-md-4 spl_m" ><div class="text">Monday special</div></div>
+  <div class="col-xs-9 col-md-4 spl_t" ><div class="text">Tuesday special</div></div>
+  <div class="col-xs-9 col-md-4 spl_w" ><div class="text">Wednesday special</div></div>
+  </div>
+  <div class="row">
+  <div class="col-xs-9 col-md-4 spl_th" ><div class="text">Thursday special</div></div>
+  <div class="col-xs-9 col-md-4 spl_f" ><div class="text">Friday special</div></div>
+  <div class="col-xs-9 col-md-4 spl_s" ><div class="text">Saturday special</div></div>
+  </div>
+  <div class="row">
+  <div class="col-xs-9 col-md-4" ></div>
+  <div class="col-xs-9 col-md-4 spl_su" ><div class="text">Sunday special</div></div>
+  <div class="col-xs-9 col-md-4" ></div>
+  </div>
+  </div>
+  <hr>
+  <div>
+  <table class="tb2">
+    <tr>
+      <td >Comments:</td>
+      <td><textarea rows="4" cols="65" placeholder="Enter comments"></textarea></td>
+   
+    
+      <td><a href="https://www.facebook.com/"><img src="images/facebook.png" width="50" height="50"></a><br><a href="https://www.instagram.com/"><img src="images/insta.png" width="50" height="50"><br><a href="#"><img src="images/whatsapp.png" width="50" height="50"></td>
+    </tr>
+  </table>
+  <br>
+  <ul class="u2">
+  <li class="l2"><img src="images/logo.jpg"></li>
+  <li class="l1"> </li><li class="l1"> </li><li class="l1"> </li>
+  <li class="l1"> </li><li class="l1"> </li><li class="l1"> </li>
+  <li class="l1"> </li><li class="l1"> </li><li class="l1"> </li>
+  <li class="l1"> </li><li class="l1"> </li><li class="l1"> </li>
+  <li class="l1"> </li><li class="l1"> </li><li class="l1"> </li>
+  <li class="l1"><p class="a1">&copySuvanRajaviDhvani</p>
+  </ul>
+
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
